@@ -11,6 +11,13 @@ function App() {
       <Route path="/signup" element={<Signup />}></Route>
       <Route path="/homepage" element={<Homepage />}></Route>
     </Routes>
+    //   <Signup
+    //   logoSrc={Favicon}
+    //   buttonText="Create Account"
+    //   footerText="Don't have an account yet?"
+    //   signInLink="/login"
+    //   signInText="Log in here"
+    // />
   );
 }
 

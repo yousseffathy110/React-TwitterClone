@@ -3,8 +3,9 @@ import Favicon from "../assets/TwitterFavIcon.png";
 import React, { useState } from "react";
 import "../styles/signup.css";
 import { Link, useNavigate } from "react-router-dom";
+import PropTypes from "prop-types";
 
-const Signup = () => {
+const Signup = (props) => {
   const navigate = useNavigate();
 
   const [firstName, setFirstName] = useState("");
@@ -93,17 +94,28 @@ const Signup = () => {
         <br />
         <br />
         <button className="redirect" onClick={handleSignUp}>
-          sign up
+          {props.buttonText || "sign up"}
         </button>
       </form>
       <br />
       <br />
       <br />
       <p className="p2">
-        Already have an account? <Link to="/">Sign in</Link>
+        {props.footerText || "Already have an account?"}{" "}
+        <Link to={props.signInLink || "/"}>
+          {props.signInText || "Sign in"}
+        </Link>
       </p>
     </div>
   );
+};
+
+Signup.propTypes = {
+  // logoSrc: PropTypes.string,
+  buttonText: PropTypes.string,
+  footerText: PropTypes.string,
+  signInLink: PropTypes.string,
+  signInText: PropTypes.string,
 };
 
 export default Signup;
