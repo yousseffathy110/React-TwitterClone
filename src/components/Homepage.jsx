@@ -2,6 +2,10 @@
 import Favicon from "../assets/TwitterFavIcon.png";
 // @ts-ignore
 import personalpic from "../assets/main-acc-img.jpg";
+// @ts-ignore
+import nabilpic from "../assets/nabil.jpg";
+// @ts-ignore
+import alaapic from "../assets/alaa.jpg";
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/homepage.css";
@@ -156,7 +160,7 @@ const Homepage = () => {
             </div>
             <div className="feed-tweets">
               <img
-                src={personalpic}
+                src={nabilpic}
                 alt="profile pic"
                 loading="lazy"
                 className="per-img"
@@ -168,13 +172,13 @@ const Homepage = () => {
                     target="_blank"
                     className="username"
                   >
-                    yousef fathy
-                    <span className="handle">@yousef134510</span>
+                    Nabil salah
+                    <span className="handle">@nabil187510</span>
                   </a>
                   <i className="material-icons-outlined">more_horiz</i>
                 </div>
                 <div className="tweet-content">
-                  <p>Hi, I'm yousef and This's Twitter Clone.</p>
+                  <p>Hi, I'm Nabil and This's Twitter Clone.</p>
                 </div>
                 <div className="tweet-engagments">
                   <i className="material-icons-outlined">chat_bubble_outline</i>
@@ -188,7 +192,7 @@ const Homepage = () => {
             </div>
             <div className="feed-tweets">
               <img
-                src={personalpic}
+                src={alaapic}
                 alt="profile pic"
                 loading="lazy"
                 className="per-img"
@@ -200,13 +204,13 @@ const Homepage = () => {
                     target="_blank"
                     className="username"
                   >
-                    yousef fathy
-                    <span className="handle">@yousef134510</span>
+                    Ahmed alaa
+                    <span className="handle">@ahmedala854</span>
                   </a>
                   <i className="material-icons-outlined">more_horiz</i>
                 </div>
                 <div className="tweet-content">
-                  <p>Hi, I'm yousef and This's Twitter Clone.</p>
+                  <p>Hi, I'm Ahmed and This's Twitter Clone.</p>
                 </div>
                 <div className="tweet-engagments">
                   <i className="material-icons-outlined">chat_bubble_outline</i>

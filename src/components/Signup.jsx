@@ -111,7 +111,7 @@ const Signup = (props) => {
 };
 
 Signup.propTypes = {
-  // logoSrc: PropTypes.string,
+  logoSrc: PropTypes.string,
   buttonText: PropTypes.string,
   footerText: PropTypes.string,
   signInLink: PropTypes.string,
