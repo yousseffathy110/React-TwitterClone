@@ -6,6 +6,8 @@ import personalpic from "../assets/main-acc-img.jpg";
 import nabilpic from "../assets/nabil.jpg";
 // @ts-ignore
 import alaapic from "../assets/alaa.jpg";
+// @ts-ignore
+import mostafa from "../assets/mostafa.jpg";
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/homepage.css";
@@ -204,7 +206,7 @@ const Homepage = () => {
                     target="_blank"
                     className="username"
                   >
-                    Ahmed alaa
+                    Abo alaa
                     <span className="handle">@ahmedala854</span>
                   </a>
                   <i className="material-icons-outlined">more_horiz</i>
@@ -224,7 +226,7 @@ const Homepage = () => {
             </div>
             <div className="feed-tweets">
               <img
-                src={personalpic}
+                src={mostafa}
                 alt="profile pic"
                 loading="lazy"
                 className="per-img"
@@ -236,13 +238,13 @@ const Homepage = () => {
                     target="_blank"
                     className="username"
                   >
-                    yousef fathy
-                    <span className="handle">@yousef134510</span>
+                    Mostafa elgin
+                    <span className="handle">@elgin134510</span>
                   </a>
                   <i className="material-icons-outlined">more_horiz</i>
                 </div>
                 <div className="tweet-content">
-                  <p>Hi, I'm yousef and This's Twitter Clone.</p>
+                  <p>Hi, I'm elgin and This's Twitter Clone.</p>
                 </div>
                 <div className="tweet-engagments">
                   <i className="material-icons-outlined">chat_bubble_outline</i>
