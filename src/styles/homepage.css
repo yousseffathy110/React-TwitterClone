@@ -599,3 +599,75 @@ p {
   -ms-border-radius: 999px;
   -o-border-radius: 999px;
 }
+
+/* responsive design  */
+
+@media screen and (max-width: 1260px) {
+  header {
+    width: 10%;
+    padding: 10px 0;
+  }
+  main {
+    margin-left: 10%;
+    width: 90%;
+  }
+  header span {
+    display: none;
+  }
+  header .tweet-btn {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 1rem;
+    padding: 20px 8px;
+  }
+  header .main-acc {
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+  }
+  header .main-acc i {
+    display: none;
+  }
+  header .details {
+    display: none;
+  }
+  .navigation {
+    align-items: center;
+  }
+  .navigation a i {
+    margin-right: 0;
+  }
+  .navigation a,
+  .main-acc a {
+    padding: 10px;
+  }
+  .NewTweet-Btn {
+    display: none;
+  }
+  .tweet-btn2 {
+    display: none;
+  }
+  #hidden {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #hidden2 {
+    display: none;
+  }
+  #hidden3 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  header .main-acc a i {
+    display: none;
+  }
+}

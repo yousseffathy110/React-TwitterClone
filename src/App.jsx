@@ -8,18 +8,22 @@ import Favicon from "./assets/TwitterFavIcon.png";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<SignIn />}></Route>
-      <Route path="/signup" element={<Signup />}></Route>
-      <Route path="/homepage" element={<Homepage />}></Route>
-    </Routes>
-    // <Signup
-    //   logoSrc={Favicon}
-    //   buttonText="Create Account"
-    //   footerText="Don't have an account yet?"
-    //   signInLink="/login"
-    //   signInText="Log in here"
-    // />
+    <>
+      <Routes>
+        <Route path="/" element={<SignIn />}></Route>
+        <Route
+          path="/signup"
+          element={
+            <Signup
+              // footerText="Don't have an account yet?"
+              // signInLink="/"
+              // signInText="Log in here"
+            />
+          }
+        />
+        <Route path="/homepage" element={<Homepage />}></Route>
+      </Routes>
+    </>
   );
 }
 

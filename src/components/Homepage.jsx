@@ -11,6 +11,8 @@ import mostafa from "../assets/mostafa.jpg";
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/homepage.css";
+import axios from "axios";
+import { useState } from "react";
 
 const Homepage = () => {
   const fontWeight = {
@@ -24,6 +26,19 @@ const Homepage = () => {
   };
   const textcolor = {
     color: "rgb(110, 118, 125)",
+  };
+  //use state hook
+  const [data, setdata] = useState("");
+  const retriveData = () => {
+    axios
+      .get("https://jsonplaceholder.typicode.com/todos/1")
+      .then((Response) => {
+        console.log(Response.data.title);
+        setdata(Response.data.title);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
   };
   return (
     <>
@@ -67,7 +82,9 @@ const Homepage = () => {
             <i className="material-icons-outlined">more</i>
             <span>More</span>
           </a>
-          <button className="tweet-btn">tweet</button>
+          <button className="tweet-btn" onClick={retriveData}>
+            tweet
+          </button>
         </nav>
         <div className="main-acc">
           <a href="/profile-page.html">
@@ -148,7 +165,7 @@ const Homepage = () => {
                   <i className="material-icons-outlined">more_horiz</i>
                 </div>
                 <div className="tweet-content">
-                  <p>Hi, I'm yousef and This's Twitter Clone.</p>
+                  <p>{data}.</p>
                 </div>
                 <div className="tweet-engagments">
                   <i className="material-icons-outlined">chat_bubble_outline</i>
